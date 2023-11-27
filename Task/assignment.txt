@@ -1,0 +1,2 @@
+1. Write javascript code to show arithmetic operation.
+2. Write javascript code to check if a number from input is even or odd.
