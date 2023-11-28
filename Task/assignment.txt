@@ -1,2 +1,7 @@
 1. Write javascript code to show arithmetic operation.
 2. Write javascript code to check if a number from input is even or odd.
+3. Write javascript code to input username and password. Then make following validations.
+    a. Username and password are required.
+    b. Username and password cannot be same.
+    c. Username must be at least 5 character long.
+    d. Password must be at least 8 character long. 

@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Javascript</title>
+    </head>
+    <body>
+        <form action="" onsubmit="return myform();">
+            <input type="text" placeholder="Enter Username" id="username">
+            <input type="password" placeholder="Enter Password" id="password">
+            <input type="submit" value="Login">
+        </form>
+        <script>
+            //check for following validations
+            //1. username and password cannot be empty
+            //2. username and password cannot be same.
+
+            function myform()
+            {
+                var uname = document.getElementById('username').value;
+                var pass = document.getElementById('password').value;
+                if(uname == '' || pass=='')
+                {
+                    alert('Username and password are required !');
+                    return false;
+                }
+
+                if(uname == pass)
+                {
+                    alert('Username and passsword cannot be same');
+                    return false;
+                }
+                if(uname.length < 5)
+                {
+                    alert('Username must be at least 5 character long');
+                    return false;
+                }
+                if(pass.length < 8)
+                {
+                    alert('Password must be at least 8 character long');
+                    return false;
+                }
+            }
+
+        </script>
+    </body>
+</html>
