@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>foreach</title>
+    </head>
+    <body>
+        <script>
+            let fruits = ["Apple","Orange","Mango"];
+            fruits.forEach(myfunction);
+            function myfunction(item,index){
+                console.log(index+':'+item);
+            }
+            
+            let totalmarks = 0;
+
+            let marks = [50,60,70,50];
+            marks.forEach(total);
+            function total(marks){
+                // totalmarks += marks;
+                totalmarks = totalmarks + marks;
+            }
+            console.log(totalmarks);
+        </script>
+    </body>
+</html>
