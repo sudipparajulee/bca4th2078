@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>My title</title>
+    </head>
+    <body>
+        <h1 id="mytext">This is a text</h1>
+        <button id="mybtn">Change Color</button>
+
+        <script>
+            var mytext = document.getElementById('mytext');
+            mytext.style.color = 'red';
+            var mybtn = document.getElementById('mybtn');
+            mybtn.addEventListener('click',function(){
+                if(mytext.style.color == 'red')
+                {
+                    mytext.style.color = 'blue';
+                }
+                else
+                {
+                    mytext.style.color = 'red';
+                }
+            });
+
+        </script>
+    </body>
+</html>

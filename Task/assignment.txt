@@ -5,3 +5,5 @@
     b. Username and password cannot be same.
     c. Username must be at least 5 character long.
     d. Password must be at least 8 character long. 
+
+4. Write javascript code to change a red text to blue when a button is clicked, and blue to red if the button is clicked again.
