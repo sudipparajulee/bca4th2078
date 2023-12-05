@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Window scroll example</title>
+        <style>
+            html,body{
+                scroll-behavior: smooth;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="histroy.html">Go to Next Page</a>
+        <h1>This is heading</h1>
+        <h1>This is heading</h1>
+        <h1>This is heading</h1>
+        <h1>This is heading</h1>
+        <h1>This is heading</h1>
+        <h1>This is heading</h1>
+        <h1>This is heading</h1>
+        <h1>This is heading</h1>
+        <h1>This is heading</h1>
+        <h1>This is heading</h1>
+        <h1>This is heading</h1>
+        <h1>This is heading</h1>
+        <a id="topbtn" style="position: fixed; right: 5px; bottom: 10px;">UP</a>
+        <script>
+            var btn = document.getElementById('topbtn');
+            btn.style.display = 'none';
+            window.onscroll = function()
+            {
+                console.log(window.pageYOffset);
+                if(window.pageYOffset > 100)
+                {
+                    btn.style.display = 'block';
+                }
+                else
+                {
+                    btn.style.display = 'none';
+                }
+            }
+            btn.addEventListener('click',function(){
+                gototop();
+            });
+            function gototop()
+            {
+                document.body.scrollTop = 0;
+                //animate while scrolling
+                
+            }
+        </script>
+    </body>
+</html>
