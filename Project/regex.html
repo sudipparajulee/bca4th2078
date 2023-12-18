@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Regex Example</title>
+    </head>
+    <body>
+        
+            <input type="text" id="phone" placeholder="Enter Phone Number">
+            <input type="submit" id="submitbtn" value="Check Phone">
+        
+            <script>
+                var btn = document.getElementById('submitbtn');
+                btn.addEventListener('click',function(){
+                    checkPhone();
+                });
+                
+                function checkPhone(){
+                    var phone = document.getElementById('phone').value;
+                    var pattern = /^\d{10}$/;
+                    var result = pattern.test(phone);
+                    if(result)
+                    {
+                        alert('Phone format is correct');
+                    }
+                    else
+                    {
+                        alert('Sorry, Phone must be exact 10 digit');
+                    }
+                }
+            </script>
+    </body>
+</html>
